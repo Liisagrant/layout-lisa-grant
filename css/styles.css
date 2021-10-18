@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: rgb(250, 243, 243);
   margin: 0px;
   padding: 0px;
   max-width: 987px;
@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-  background-color: rgba(118, 228, 235, 1);
+  background-color: aquamarine;
   display: block;
   width: 100%;
   height: 48px;
@@ -18,34 +18,70 @@ body {
   top: 0px;
 }
 
-.hero-banner {
-  display: block;
+.containerhb {
+  position: relative;
   background-color: rgba(49, 95, 164, 1);
-  height: 420px;
+  margin-bottom: 20px;
 }
 
-.top-column {
+.hb-text {
+  position: relative;
+  top: 80%;
+  left: 15%;
+}
+
+.hero-banner {
+  display: inline-flex;
+  background-color: rgba(49, 95, 164, 1);
+  height: 420px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  color: azure;
+  padding: 0%;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: lighter;
+  color: azure;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 .column {
-  background-color: rgba(202, 29, 205, 1);
-  display: block;
-  width: 100%;
+  display: table-column;
+  background-color: green;
+  width: 448px;
   height: 220px;
-  margin-top: 20px;
   margin-bottom: 20px;
+  justify-content: space-around;
 }
 
 .footer {
   background-color: rgba(192, 24, 135, 1);
-  display: inline-block;
+  display: flex;
   width: 100%;
   height: 172px;
 }
 
 @media screen and (min-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .column {
-    display: inline-block;
+    display: flex;
     width: 315px;
     height: 220px;
   }
